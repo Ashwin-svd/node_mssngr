@@ -17,7 +17,7 @@ const server=http.createServer(app)
 const io=socketio(server)// vow our servver suprots web socket
 
 const{addUser,removeUser,getUser,getUsersInRoom}=require('./utils/users')
-const port=3000
+const port=process.env.PORT || 3000
 const publicdirectory=path.join(__dirname,'../public')
 app.use(express.static(publicdirectory))
 let count =0;
