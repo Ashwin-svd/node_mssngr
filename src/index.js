@@ -20,7 +20,7 @@ let count =0;
 
 
 io.on('connection',(socket)=>{//'connection'=built in event
-    console.log("newconnection")
+    
 
                     socket.on('join',({username,room},callback)=>{
                         const {error,user}=addUser({id:socket.id,username,room})
@@ -76,7 +76,7 @@ return callback('Profanity is not allowed!')
 
 socket.on('sendlocation',(position,callback)=>{
     const user= getUser(socket.id)
-        io.to(user.room).emit('locationMessage',`https://google.com/maps?q=${position.longitude},${position.latitude}`)
+        io.to(user.room).emit('locationMessage',generateMessage(`https://google.com/maps?q=${position.longitude},${position.latitude}`,user.username))
         callback()
     })
 })

@@ -31,9 +31,9 @@ socket.on('message',(word)=>{
 })
 
 //for location
-socket.on('locationMessage',(url)=>{
+socket.on('locationMessage',(word)=>{
     //console.log(url)
-    const html=Mustache.render(locationmessagetemplate,{url:url})
+    const html=Mustache.render(locationmessagetemplate,{name:word.name,created_at:moment(word.createdAt).format('h:mm a'),url:word.text})
     $messages.insertAdjacentHTML('beforeend',html)
 })
 

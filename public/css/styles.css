@@ -28,7 +28,7 @@ label {
     display: block;
     font-size: 14px;
     margin-bottom: 8px;
-    color: #777;
+    color: rgb(0, 0, 0);
 }
 
 input {
@@ -40,7 +40,7 @@ input {
 button {
     cursor: pointer;
     padding: 12px;
-    background: #7C5CBF;
+    background: #3c03b6;
     border: none;
     color: white;
     font-size: 16px;
@@ -59,7 +59,7 @@ button:disabled {
 /* Join Page Styles */
 
 .centered-form {
-    background: #333744;
+    background: #ffffff;
     width: 100vw;
     height: 100vh;   
     display: flex;
@@ -68,8 +68,8 @@ button:disabled {
 }
 
 .centered-form__box {
-    box-shadow: 0px 0px 17px 1px #1D1F26;
-    background: #F7F7FA;
+    box-shadow: 0px 0px 17px 1px #96b3e6;
+    background: #9597c7;
     padding: 24px;
     width: 250px;
 }
@@ -166,7 +166,7 @@ button:disabled {
 
 .room-title {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 15px;
     background: #05105a;
     padding: 24px;   
 }
@@ -175,11 +175,24 @@ button:disabled {
     font-weight: 500;
     font-size: 18px;background: #0e2cee;
     margin-bottom: 4px;
-    padding: 12px 24px 0 24px;
+    padding: 12px 24px 0 10px;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .users {
     list-style-type: none;
     font-weight: 200;
-    padding: 12px 24px 0 54px;
+    padding: 12px 24px 0 10px;
+}
+/*heading*/
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 25px;background: #a8a8ab;
+    
+   
 }

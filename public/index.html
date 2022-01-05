@@ -2,17 +2,21 @@
 <html>
     <head>
         <title>Chat App</title>
-        
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
+        <header class=heading>
+            <h1>Easy-Communications</h1>
+            
+          </header>
         <div class="centered-form">
             <div class="centered-form__box">
                 <h1>Join</h1>
                 <form action="/chat.html">
-                    <label>Display name</label>
-                    <input type="text" name="username" placeholder="Display name" required>
-                    <label>Room</label>
-                    <input type="text" name="room" placeholder="Room" required>
+                    <label>Enter Username</label>
+                    <input type="text" name="username" required>
+                    <label>Room You want to join</label>
+                    <input type="text" name="room" required>
                     <button>Join</button>
                 </form>
             </div>
