@@ -31,6 +31,7 @@ const addUser = ({ id, username, room }) => {
     const user = { id, username, room }
     
     users.push(user)
+   
     return { user }
 }
 
@@ -40,6 +41,7 @@ const removeUser = (id) => {
     if (index !== -1) {
         return users.splice(index, 1)[0]
     }
+    
 }
 
 // addUser({
